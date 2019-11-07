@@ -1,0 +1,70 @@
+<html>
+
+<head>
+    <title>Student Form</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<script defer src="verify.js"></script>
+<script>
+// document.addEventListener('DOMContentLoaded', () => {
+//     var roll = document.getElementById("roll");
+//         let name = document.getElementById("n");
+//         console.log(name)
+//         console.log(roll)
+//         var date = document.getElementById("dob");
+
+
+
+//         function allLetter() {
+//             var letters = /^[A-Za-z]+$/;
+//             alert(name)
+//             if (name.match(letters)) {
+//                 alert("Name Accepted");
+//                 return true;
+//             }
+//             else {
+//                 alert("Name not Accepted");
+//                 return false;
+//             }
+//         }
+//         function checkDigit(roll) {
+//             var flag = false;
+//             var number = /^[0-9]+$/;
+//             if (roll.value.match(number)) {
+
+//                 flag = true;
+//             }
+//             else {
+//                 alert("Roll Not Accepted : Should be numeric");
+//                 flag = false;
+//             }
+
+//             if (flag == true) {
+//                 if (!roll.toString().length == 7) { alert("Roll Not Accepted : length should be 7") }
+//             }
+//             else {
+//                 alert("Roll no Accepted");
+//             }
+
+
+//         }
+// })
+// </script>
+<body>
+    <script type="text/javascript">
+        
+    </script>
+
+
+    <center> <h1><b>Student Application Form</b></h1></br></br>
+        <form method="post" ONSubmit="allLetter(event);checkDigit(event);checkDate(event);" >
+            Name:   <input type="text" name="Name" placeholder="Your Name" id="n"> <br><br>
+            Roll no:    <input type="text" name="roll" placeholder="Enter a 7 digit Roll Number" id="rol_sect" > <br><br>
+            Date of Birth:  <input type="text" name="dob" placeholder="DD/MM/YYYY" id="d"> <br><br>
+            <input type="submit" name="sub" value="submit">
+        </form>
+        <script>console.log("loaded");</script>
+</body>
+
+</html>

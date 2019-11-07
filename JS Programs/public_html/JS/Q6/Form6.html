@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script defer src="val.js"></script>
+    </head>
+    <body>
+        <h1><center>INFONET SERVICES</center></h1><b>
+            <hr><hr>
+            <form onSubmit="validate();">
+                <input type="text" id="Fname" placeholder="First Name" required> First Name</input><br><br>
+                <input type="text" id="Lname" placeholder="Last Name" required> Last Name</input><br><br>
+                <input type="text" id="email" placeholder="E-mail Address" required> E-mail Address</input><br><br>
+                <input type="text" id="Address" placeholder="Address" required> Address</input><br><br>
+                <input type="text" id="city" placeholder="City" required> City</input><br><br>
+                <input type="text" id="state" placeholder="State" required> State</input>&emsp;
+                <input type="text" id="Pcode" placeholder="Postal Code" required> Postal Code</input>&emsp;
+                <input type="text" id="country" placeholder="Country" required> Country</input>&emsp;
+                <br><br><p><i>Please choose the most appropriate statement</i></p>
+                <input type="radio" name="rsry" value="I regularly purchase items online"> I regularly purchase items online<br>
+                <input type="radio" name="rsry" value="I have an occasion purchased items online"> I have an occasion purchased items online<br>
+                <input type="radio" name="rsry" value=" I have not purchased anything online, but I would consider it" checked> I have not purchased anything online, but I would consider it<br>
+                <input type="radio" name="rsry" value="I prefer to shop in real stores"> I prefer to shop in real stores<br>
+                <br><br><p><i>I'm interested in (choose all that apply) </i></p>
+                <input type="checkbox" name="csry1" id="1" > Hiking<br>
+                <input type="checkbox" name="csry2" id="2"> Mountain Biking<br>
+                <input type="checkbox" name="csry3" id="3"> Camping<br>
+                <input type="checkbox" name="csry4" id="4"> Rock Climbing<br>
+                <input type="checkbox" name="csry5" id="5"> Off-Road 4WD<br>
+                <input type="checkbox" name="csry6" id="6"> Cross-country Skiing<br>
+                <br><br><p><i>I learned about this site from </i></p>
+                <select id="opt">
+                    <option></option>
+                    <option value="dd1">Print Ads</option>
+                    <option value="dd2">Radio</option>
+                    <option value="dd3">Television</option>
+                    <option value="dd4">Internet</option>
+                    <option value="dd5">Friends and Family </option>                
+                </select>
+                <br><br><p>Comments </p><br>
+                <textarea name="myTextarea" placeholder="Please type any comments here" cols="60" rows="10" required></textarea><br><br>
+                <input type="submit"  />&emsp;
+                <button onclick="clear();">Start Over</button>
+
+
+            </form>
+        </b></body>
+</html>

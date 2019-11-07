@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Timeout </title>
+    </head>
+    <body onLoad="f()">
+        <div>	<p id="text">Hello World</p>	</div>
+        <div>
+            <img src="me.jpg" id="im" height="250" width="250"><br>
+            <button onclick="g()" id="b1">Move Image</button>
+            <button onclick="h()" id="b2">Stop Image</button>
+        </div>
+
+        <script>
+            
+            var w;
+            function f()
+            {
+                setTimeout(() => {
+                    document.getElementById("text").style.color = '#'+randomNum();
+                }, 300);
+            }
+            function a()
+            {
+                var img = document.getElementById("im");
+                img.style.position = "relative";
+                img.style.left = randomNum() + "px";
+                img.style.top = randomNum() + "px";
+            }
+            function g()
+            {
+                w = setInterval("a()", 500);
+            }
+            function h()
+            {
+                clearInterval(w);
+            }
+            function randomNum() {
+                return  Math.floor(Math.random() * window.screen.height).toString(16);
+            }
+        </script>
+    </body>
+</html>
